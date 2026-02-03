@@ -1,7 +1,7 @@
 version: '3'
 services:
   wordpress:
-    image: 'ghcr.io/SonamRinchen2003/govtech_astratemplates_theme5_wordpress:latest'
+    image: 'ghcr.io/sonamrinchen2003/govtech_astratemplates_theme5_wordpress:latest'
     environment:
       - WORDPRESS_DB_HOST=db
       - WORDPRESS_DB_NAME=theme5_astraagency.
@@ -13,7 +13,7 @@ services:
     volumes:
       - 'wordpress_data_theme5_astraagency:/var/www/html/wp-content'
   db:
-    image: 'ghcr.io/wons-bhutan/govtech_astratemplates_theme5_mariadb:latest'
+    image: 'ghcr.io/sonamrinchen2003/govtech_astratemplates_theme5_mariadb:latest'
     volumes:
       - 'mariadb_data_theme5_astraagency:/var/lib/mysql'
     environment:
