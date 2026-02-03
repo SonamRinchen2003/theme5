@@ -1,7 +1,7 @@
 version: '3'
 services:
   wordpress:
-    image: 'ghcr.io/wons-bhutan/govtech_astratemplates_wordpress:latest'
+    image: 'ghcr.io/SonamRinchen2003/govtech_astratemplates_wordpress:latest'
     environment:
       - WORDPRESS_DB_HOST=db
       - WORDPRESS_DB_NAME=theme5_astraagency.
