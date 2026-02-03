@@ -1,27 +1,27 @@
 version: '3'
 services:
   wordpress:
-    image: 'ghcr.io/SonamRinchen2003/govtech_astratemplates_wordpress:latest'
+    image: 'ghcr.io/SonamRinchen2003/govtech_astratemplates_theme5_wordpress:latest'
     environment:
       - WORDPRESS_DB_HOST=db
       - WORDPRESS_DB_NAME=theme5_astraagency.
-      - WORDPRESS_DB_PASSWORD=theme5_ow8eyF@938y0
-      - WORDPRESS_DB_USER=astraagency
-      - "WORDPRESS_CONFIG_EXTRA=define('WP_HOME','https://astraagency.wonstechnology.com.');define('WP_SITEURL','https://astraagency.wonstechnology.com');define('USE_MYSQL','1');"
+      - WORDPRESS_DB_PASSWORD=ow8eyF@938y0
+      - WORDPRESS_DB_USER=theme5astraagency
+      - "WORDPRESS_CONFIG_EXTRA=define('WP_HOME','https://theme5.wonstechnology.com.');define('WP_SITEURL','https://theme5.wonstechnology.com');define('USE_MYSQL','1');"
     depends_on:
       - db
     volumes:
-      - 'wordpress_data_astraagency.:/var/www/html/wp-content'
+      - 'wordpress_data_theme5_astraagency:/var/www/html/wp-content'
   db:
-    image: 'ghcr.io/wons-bhutan/govtech_astratemplates_mariadb:latest'
+    image: 'ghcr.io/wons-bhutan/govtech_astratemplates_theme5_mariadb:latest'
     volumes:
-      - 'mariadb_data_astraagency.e:/var/lib/mysql'
+      - 'mariadb_data_theme5_astraagency:/var/lib/mysql'
     environment:
-      - MARIADB_DATABASE=astraagency.
+      - MARIADB_DATABASE=theme5_astraagency.
       - MARIADB_PASSWORD=ow8eyF@938y0
       - MARIADB_ROOT_PASSWORD=rootow8eyF@938y0
-      - MARIADB_USER=astraagency.
+      - MARIADB_USER=theme5astraagency.
 
 volumes:
-  mariadb_data_theme5_astraagency.e: null
-  wordpress_data_theme5_astraagency.e: null
+  mariadb_data_theme5_astraagency: null
+  wordpress_data_theme5_astraagency: null
