@@ -4,8 +4,8 @@ services:
     image: 'ghcr.io/wons-bhutan/govtech_astratemplates_wordpress:latest'
     environment:
       - WORDPRESS_DB_HOST=db
-      - WORDPRESS_DB_NAME=theme5astraagency.
-      - WORDPRESS_DB_PASSWORD=theme5ow8eyF@938y0
+      - WORDPRESS_DB_NAME=theme5_astraagency.
+      - WORDPRESS_DB_PASSWORD=theme5_ow8eyF@938y0
       - WORDPRESS_DB_USER=astraagency
       - "WORDPRESS_CONFIG_EXTRA=define('WP_HOME','https://astraagency.wonstechnology.com.');define('WP_SITEURL','https://astraagency.wonstechnology.com');define('USE_MYSQL','1');"
     depends_on:
@@ -23,5 +23,5 @@ services:
       - MARIADB_USER=astraagency.
 
 volumes:
-  mariadb_data_theme5astraagency.e: null
-  wordpress_data_theme5astraagency.e: null
+  mariadb_data_theme5_astraagency.e: null
+  wordpress_data_theme5_astraagency.e: null
