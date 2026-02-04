@@ -7,7 +7,7 @@ services:
       - WORDPRESS_DB_NAME=theme5_astraagency.
       - WORDPRESS_DB_PASSWORD=ow8eyF@938y0
       - WORDPRESS_DB_USER=theme5astraagency
-      - "WORDPRESS_CONFIG_EXTRA=define('WP_HOME','https://theme5.wonstechnology.com.');define('WP_SITEURL','https://theme5.wonstechnology.com');define('USE_MYSQL','1');"
+      - "WORDPRESS_CONFIG_EXTRA=define('WP_HOME','https://theme5.wonstechnology.com');define('WP_SITEURL','https://theme5.wonstechnology.com');define('USE_MYSQL','1');"
     depends_on:
       - db
     volumes:
