@@ -4,7 +4,7 @@ services:
     image: 'ghcr.io/sonamrinchen2003/govtech_astratemplates_theme5_wordpress:latest'
     environment:
       - WORDPRESS_DB_HOST=db
-      - WORDPRESS_DB_NAME=theme5_astraagency.
+      - WORDPRESS_DB_NAME=theme5_astraagency
       - WORDPRESS_DB_PASSWORD=ow8eyF@938y0
       - WORDPRESS_DB_USER=theme5astraagency
       - "WORDPRESS_CONFIG_EXTRA=define('WP_HOME','https://theme5.wonstechnology.com');define('WP_SITEURL','https://theme5.wonstechnology.com');define('USE_MYSQL','1');"
@@ -17,10 +17,10 @@ services:
     volumes:
       - 'mariadb_data_theme5_astraagency:/var/lib/mysql'
     environment:
-      - MARIADB_DATABASE=theme5_astraagency.
+      - MARIADB_DATABASE=theme5_astraagency
       - MARIADB_PASSWORD=ow8eyF@938y0
       - MARIADB_ROOT_PASSWORD=rootow8eyF@938y0
-      - MARIADB_USER=theme5astraagency.
+      - MARIADB_USER=theme5astraagency
 
 volumes:
   mariadb_data_theme5_astraagency: null
